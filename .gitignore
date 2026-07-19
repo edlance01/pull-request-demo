@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# uv specific paths
+.uv/
+
+# OS metadata
+.DS_Store
+Thumbs.db
