@@ -8,3 +8,11 @@ def test_add():
 def test_divide():
     assert divide(10, 2) == 5
     # The pull request will later add a test for dividing by zero!
+
+def text_divide_by_zero():
+    try:
+        divide(10, 0)
+    except ValueError as e:
+        assert str(e) == "Cannot divide by zero."
+    else:
+        assert False, "Expected ValueError for division by zero"
